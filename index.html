@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+    <div class="screen flex center">
+        <div class="container flex flex-col space-between">
+
+            <div class="display flex align flex-end" id="display"></div>
+
+            <div class="divider"></div>
+
+            <div class="function-box flex flex-col space-between">
+
+                <div class="row flex space-between">
+                    <button class="operator" id="clear"> <h1>C</h1> </button>
+                    <button class="input operator" value="%"> <h1>%</h1> </button>
+                    <button class="input operator" value="/"> <h1>/</h1> </button>
+                    <button class="operator" id="back" > <h1>Del</h1> </button>
+                </div>
+
+                <div class="row flex space-between">
+                    <button class="input operand" value="7"> <h1>7</h1> </button>
+                    <button class="input operand" value="8"> <h1>8</h1> </button>
+                    <button class="input operand" value="9"> <h1>9</h1> </button>
+                    <button class="input operator" value="*"> <h1>*</h1> </button>
+                </div>
+
+                <div class="row flex space-between">
+                    <button class="input operand" value="4"> <h1>4</h1> </button>
+                    <button class="input operand" value="5"> <h1>5</h1> </button>
+                    <button class="input operand" value="6"> <h1>6</h1> </button>
+                    <button class="input operator" value="-"> <h1>-</h1> </button>
+                </div>
+
+                <div class="row flex space-between">
+                    <button class="input operand" value="1"> <h1>1</h1> </button>
+                    <button class="input operand" value="2"> <h1>2</h1> </button>
+                    <button class="input operand" value="3"> <h1>3</h1> </button>
+                    <button class="input operator" value="+"> <h1>+</h1> </button>
+                </div>
+
+                <div class="row flex space-between">
+                    <button class="input operand" value="00"> <h1>00</h1> </button>
+                    <button class="input operand" value="."> <h1>.</h1> </button>
+                    <button class="input operand" value="0"> <h1>0</h1> </button>
+                    <button class="operator" id="result"> <h1>=</h1> </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./calculator.js"></script>
+</body>
+</html>

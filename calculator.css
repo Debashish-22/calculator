@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+:root{
+    --col-purple:#9926f0;
+    --col-light-white: #fff;
+    --col-dark-white: #F5F5F5;
+}
+html{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:62.5%;
+}
+@media screen and (max-width:400px){
+    html{
+        /*Below 900px 1 rem = 8px */
+        font-size:50%;
+    }
+}
+.flex{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+.center{
+    justify-content: center;
+}
+.flex-end{
+  justify-content: flex-end;
+}
+.space-between{
+    justify-content: space-between;
+}
+.align{
+    align-items: center;
+}
+.screen{
+    height:100vh;
+    width:100%;
+    padding-top: 3rem;
+    background-color: var(--col-dark-white);
+}
+.container{
+    height:50rem;
+    width:40rem;
+    padding:1rem;
+    background-color: var(--col-light-white);
+    border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.display{
+    height:10rem;
+    width:100%;
+    font-size:2.5rem;
+    font-weight: 600;
+    padding:1rem;
+    border-radius: 1.5rem;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 2px inset, rgba(255, 255, 255, 0.5) 3px 3px 6px 1px inset;
+}
+.divider{
+    height:0.7rem;
+    width:100%;
+    border-radius: 2rem;
+    background-color: var(--col-dark-white);
+}
+.function-box{
+    height:35rem;
+    width:100%;
+}
+.row{
+    height:6rem;
+    width:100%;
+}
+button{
+    height:100%;
+    width:9rem;
+    border:none;
+    border-radius:1rem;
+    color:var(--col-purple);
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    cursor:pointer;
+    transition: 0.5s;
+}
+button:hover{
+    color:var(--col-light-white);
+    background-color: var(--col-purple);  
+}
+.operator{
+    background-color: var(--col-purple);
+    border-radius:1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color:var(--col-dark-white);
+}
+.operator:hover{
+    transform: scale(0.9);
+}
+
+@media screen and (max-width:400px){
+
+    .container{
+        width:97.5%;
+    }
+}
